@@ -1,2 +1,7 @@
-nav {background-color: darkblue;
-color: white;}
+nav {background-color: #051B54 ;
+    }
+.btn{background-color: #FFFFFF33;
+    color: white;}
+body{font-family: Verdana;}
+.card {background-color: #62DAD3;}
+.card-link {text-decoration: none;}
