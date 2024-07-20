@@ -1,7 +1,13 @@
 nav {background-color: #051B54 ;
     }
-.btn{background-color: #FFFFFF33;
+.navbar-brand {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+#botoninicio{background-color: #FFFFFF33;
     color: white;}
 body{font-family: Verdana;}
 .card {background-color: #62DAD3;}
 .card-link {text-decoration: none;}
+
+
+#contenedorformulario .btn {border: 1px solid #ddd;
+    color: #051B54;
+ }

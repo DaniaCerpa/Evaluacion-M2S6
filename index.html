@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid ">
+        <div class="container-fluid mt-1 "  id="contenedorbarra">
           <a class="navbar-brand text-white" href="#">AeroVia Express</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -43,7 +43,7 @@
                 <a class="nav-link link-light" href="#">Estado de vuelo</a>
               </li>
               <div class="d-grid gap-2 d-md-flex position-absolute top-1 end-0">
-                <button class="btn btn-primary me-md-2 rounded-pill " type="button">Iniciar Sesión</button>
+                <button class="btn btn-primary me-md-2 rounded-pill" type="button" id="botoninicio">Iniciar Sesión</button>
               </div>
             </ul>
           </div>
@@ -52,15 +52,15 @@
     <div class="card mb-3">
         <div class="row g-0">
             <div class="col-md-8">
-                <div class="card-body m-5">
-                    <h1 class="card-title">¡Vacaciones de verano!</h1>
-                    <h4 class="card-text">Vuela por Chile y Sudamérica con hasta 40% de descuento
-                    </h4>
+                <div class="card-body m-4">
+                    <h2 class="card-title">¡Vacaciones de verano!</h2>
+                    <h6 class="card-text">Vuela por Chile y Sudamérica con hasta 40% de descuento
+                    </h6>
                     <br>
-                    <h5 class="card-text text-muted">Encuentar paquetes, hoteles, seguros y arriendo de autos en AeroVia Express
-                    </h5>
+                    <h6 class="card-text text-muted">Encuentar paquetes, hoteles, seguros y arriendo de autos en AeroVia Express
+                    </h6>
                     <br>
-                    <a href="#" class="card-link link-primary fs-5" >Compra aquí</a>
+                    <a href="#" class="card-link link-primary fs-6" >Compra aquí</a>
                 </div>
             </div>
             <div class="col-md-4">
@@ -68,7 +68,55 @@
             </div>
         </div>
     </div>
-    
+    <form class="m-1" >
+        <div class="m-2 p-4 border shadow rounded-3">
+        <div id="contenedorformulario">
+            <div class="btn-group " role="group" aria-label="Basic outlined example" id="botonesform">
+                <button type="button" class="btn">Vuelos</button>
+                <button type="button" class="btn">Paquetes</button>
+                <button type="button" class="btn">Hoteles</button>
+                <button type="button" class="btn">Autos</button>
+                <button type="button" class="btn">Seguros</button>
+                <button type="button" class="btn">Upgrade</button>
+            </div>
+                <div class="dropdown mt-4 mb-4 " >
+                    <button type="button" class="btn  dropdown-toggle border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Ida y Vuelta
+                    </button>
+                    <button type="button" class="btn  dropdown-toggle border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Economy
+                    </button>
+                    <button type="button" class="btn  dropdown-toggle border-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        1 pasajero
+                    </button>
+                </div>
+            </div>
+                <div class="row m-0">
+                    <div class="col">
+                <input type="text" class="form-control" id="origen" placeholder="Origen">
+                </div>
+                <div class="col">
+                <input type="text" class="form-control " id="destino" placeholder="Destino">
+                </div>
+                <div class="col">
+                <input type="text" class="form-control " id="exampleFormControlInput1" placeholder="Fecha Ida">
+                </div>
+                <div class="col">
+                <input type="date" class="form-control " id="exampleFormControlInput1">
+                </div>
+                <div class="col">
+                <input type="text" class="form-control " id="exampleFormControlInput1" placeholder="Fecha vuelta">
+                </div>
+                <div class="col">
+                <input type="date" class="form-control " id="exampleFormControlInput1" disabled>
+                </div>
+                <div class="col" id="botonbuscar">
+                <button type="submit" class="btn btn-danger">Buscar</button>
+                </div>
+            </div>
+        
+    </div>
+      </form> 	
     <link rel="stylesheet" href="./Assets/JS/bootstrap.bundle.min.js">
 </body>
 </html>
